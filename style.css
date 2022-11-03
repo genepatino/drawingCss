@@ -1,0 +1,197 @@
+:root{
+    --primary-color: #0A8FC8
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.container_body{
+    display: flex;
+    position: relative;
+    width: 400px;
+    height: 240px;
+    /* background-image: url('/images/CNLogo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+figure{
+    width: 100%;
+    height: 100%;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.body_blue{
+    position: absolute;
+    width: 120px;
+    height: 220px;
+    top: -114px;
+    left: 88px;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    background-color: var(--primary-color);
+    transform: rotate(-12deg);
+    z-index: -1;
+}
+
+.face{
+    position: relative;
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+    display: flex;
+}
+
+.rigth_eye{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid;
+    top: 24px;
+    left: 38px;
+    transform: rotate(2deg);
+}
+
+.rigth_parpado{
+    position: absolute;
+    width: 34px;
+    height: 20px;
+    background-color: blue;
+    top: 0px;
+    left: -2px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom: 2px solid;
+    transform: rotate(-14deg);
+}
+
+.rigth_pupil{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    top: 15px;
+    left: 8px;
+    z-index: -1;
+}
+
+.left_eye{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid;
+    top: 26px;
+    left: 74px;
+    transform: rotate(2deg);
+
+}
+
+.left_parpado{
+    position: absolute;
+    width: 26px;
+    height: 11px;
+    background-color: blue;
+    top: 0px;
+    left: -2px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom: 2px solid;
+    transform: rotate(-14deg);
+}
+
+.left_pupil{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    top: 5px;
+    left: 6px;
+    z-index: -1;
+}
+
+.eyebrows_rigth{
+    position: absolute;
+    width: 25px;
+    height: 15px;
+    background: transparent;
+    border-top: 2px solid;
+    top: 18px;
+    left: 32px;
+    transform: rotate(-34deg);
+    border-radius: 50%;
+
+}
+
+.eyebrows_left{
+    position: absolute;
+    width: 19px;
+    height: 10px;
+    background: transparent;
+    border-top: 2px solid;
+    top: 20px;
+    right: 23px;
+    transform: rotate(4deg);
+    border-radius: 50%;
+}
+
+.mouth{
+    position: absolute;
+    width: 26px;
+    height: 15px;
+    background: transparent;
+    border-top: 2px solid;
+    bottom: 21px;
+    right: 12px;
+    transform: rotate(145deg);
+    border-radius: 50%;
+}
+
+.right_arm{
+    position: absolute;
+    width: 43px;
+    height: 29px;
+    border-bottom: 1px solid;
+    border-right: double;
+    border-radius: 48% 58% 32% 83% / 66% 103% 0% 47%;
+    transform: rotate(121deg);
+    top: -46px;
+    left: 173px;
+    background: var(--primary-color);
+}
+
+.left_arm{
+    position: absolute;
+    width: 43px;
+    height: 22px;
+    border-bottom: 1px solid;
+    border-right: double;
+    border-radius: 2% 67% 8% 98% / 61% 99% 0% 23%;
+    transform: rotate(-60deg);
+    top: -36px;
+    left: 141px;
+    background: var(--primary-color);
+}
